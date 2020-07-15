@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Кириллов](https://up.htmlacademy.ru/adaptive/20/user/234663).
-* Наставник: Дмитрий Иовлев. https://htmlacademy.ru/profile/skywalker
+* Наставник: [Дмитрий Иовлев] (https://htmlacademy.ru/profile/id200490).
 
 ---
 
