@@ -4,9 +4,137 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page_body">
+    <header class="page-header">
+      <a href="" class="page-header__logo"><img src="https://via.placeholder.com/" alt="">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="link" href="catalog.html">Каталог товаров</a></li>
+            <li class="site-list__item"><a class="link" href="form.html">Вязание на заказ</a></li>
+            <li class="site-list__item">
+              <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+                <button class="form-search__button" type="button"></button>
+                <label for="search" class="visually-hidden"></label>
+                <input class="form-search__input" type="text" name="search" id="search">
+              </form>
+            </li>
+            <li class="site-list__item"><a class="link link_cart" href="cart.html" >Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+      <a href="" class="link catalog-link">
+        <p class="catalog-link__title">Предметы интерьера</p>
+        <img class="catalog-link__img catalog-link__img_interior" src="https://via.placeholder.com/" alt="каталог предметов интерьера">
+      </a>
+      <a href="" class="link catalog-link">
+        <p class="catalog-link__title">Детские игрушки</p>
+        <img class="catalog-link__img catalog-link__img_toys" src="https://via.placeholder.com/" alt="каталог игрушек">
+      </a>
+    </header>
+    <main class="page-main">
+      <section class="featured">
+        <div class="featured-wrapper">
+          <h2 class="visually-hidden">Товар недели</h2>
+          <p class="featured__title featured__title_item">Вязаные корзинки</p>
+          <p class="featured__title featured__title_promotion">Товар недели</p>
+          <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+          <dl class="feature__list">
+            <div class="feature__item">
+              <dt class="feature__parametr">Цвет:</dt>
+              <dd class="feature__value">«Тиффани»/серый</dd>
+            </div>
+            <div class="feature__item">
+              <dt class="feature__parametr">Диаметр:</dt>
+              <dd class="feature__value">25 см</dd>
+            </div>
+            <div class="feature__item">
+              <dt class="feature__parametr">Высота:</dt>
+              <dd class="feature__value">15 см</dd>
+            </div>
+          </dl>
+          <img src="" alt="" class="featured__img">
+          <p class="featured__price">Цена: 990 руб.</p>
+          <button class="button featured__button" type="button">Заказать</button>
+        </div>
+      </section>
+      <section class="about-us">
+       <div class="about-us-wrapper">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="advantages-list">
+          <li class="advantages-list__item">
+            <div class="advantages-element">
+              <img сlass="advantages-element__img" src="https://via.placeholder.com/" alt="Цветок" >
+              <p class="advantages-element__title">Экологически чистые материалы</p>
+            </div>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-element">
+              <img class="advantages-element__img" src="https://via.placeholder.com/" alt="Деньги" >
+              <p class="advantages-element__title">Скандинавский стиль по российской цене </p>
+            </div>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-element">
+              <img class="advantages-element__img" src="https://via.placeholder.com/" alt="Сердечко" >
+              <p class="advantages-element__title">величивает лайки на фотографиях</p>
+            </div>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-element">
+              <img class="advantages-element__img" src="https://via.placeholder.com/" alt="Клубок ниток" >
+              <p class="advantages-element__title">Связано вручную с любовью и умилением</p>
+            </div>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-element">
+              <img class="advantages-element__img" src="https://via.placeholder.com/" alt="Ракета" >
+              <p class="advantages-element__title">Поддержка отечественного производителя</p>
+            </div>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-element">
+              <img class="advantages-element__img" src="https://via.placeholder.com/" alt="Подарок" >
+              <p class="advantages-element__title">Поставляется в подарочной упаковке</p>
+            </div>
+          </li>
+        </ul>
+       </div>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer-wrapper">
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="http://instagramm.com" class="link social__link">
+                  <img class="social__img" src="#" alt="Инстаграмм" >
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="http://facebook.com" class="link social__link">
+                  <img class="social__img" src="" alt="Фейсбук" >
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="http://twitter.com" class="link social__link">
+                  <img class="social__img" src="#" alt="Твиттер" >
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано:</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__img" src="#" alt="htmlacademy" >
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
