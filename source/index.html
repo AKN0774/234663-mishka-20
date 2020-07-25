@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body class="page_body">
+  <body class="body">
 
-    <header class="page-header">
-      <div class="page-header-wrapper">
-        <a class="page-header__logo"><img src="https://via.placeholder.com/" alt="">
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo"><img src="https://via.placeholder.com/" alt="">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle">
@@ -16,100 +16,101 @@
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a class="link" href="catalog.html">Каталог товаров</a></li>
-              <li class="site-list__item"><a class="link" href="form.html">Вязание на заказ</a></li>
               <li class="site-list__item">
-                <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
-                  <button class="form-search__button" type="button" aria-label="Поиск по сайту"></button>
-                  <label for="search" class="visually-hidden"></label>
-                  <input class="form-search__input" type="text" name="search" id="search">
-                </form>
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
               </li>
-              <li class="site-list__item"><a class="link link_cart" href="cart.html" >Корзина: пока пуста</a></li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+               <li class="site-list__item">
+                 <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
+              </li>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--cart" href="cart.html" >Корзина: пока пуста</a>
+              </li>
             </ul>
           </div>
         </nav>
-        <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+        <h1 class="header__title">Милые штуки ручной работы для дома</h1>
       </div>
     </header>
 
-    <main class="page-main">
-      <section class="section-link">
-        <a href="catalog.html" class="catalog-link catalog-link--interior">
-          <p class="catalog-link__title">Предметы интерьера</p>
+    <main class="main">
+      <section class="pages">
+        <a href="catalog.html" class="pages__link pages__link--interior">
+          <p class="pages__title">Предметы интерьера</p>
         </a>
-        <a href="catalog.html" class="catalog-link catalog-link--toys">
-          <p class="catalog-link__title">Детские игрушки</p>
+        <a href="catalog.html" class="pages__link pages__link--toys">
+          <p class="pages__title">Детские игрушки</p>
         </a>
       </section>
 
       <section class="featured">
         <h2 class="visually-hidden">Товар недели</h2>
-          <p class="featured__title featured__title--item">Вязаные корзинки</p>
-          <p class="featured__title featured__title--promotion">Товар недели</p>
-          <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
-          <table class="specification">
-            <tr>
-              <td class="specification__parameter">Цвет:</td>
-              <td class="specification__value">«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td class="specification__parameter">Диаметр:</td>
-              <td class="specification__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="specification__parameter">Высота:</td>
-              <td class="specification__value">15 см</td>
-            </tr>
-          </table>
-          <img src="https://via.placeholder.com/" alt="" class="featured__img">
-          <p class="featured__price">Цена: 990 руб.</p>
-          <button class="button featured__button" type="button">Заказать</button>
+        <p class="featured__title-item">Вязаные корзинки</p>
+        <p class="featured__title-promotion">Товар недели</p>
+        <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+        <table class="featured__table">
+          <tr>
+            <td class="featured__table-parameter">Цвет:</td>
+            <td class="featured__table-value">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="featured__table-parameter">Диаметр:</td>
+            <td class="featured__table-value">25 см</td>
+          </tr>
+          <tr>
+            <td class="featured__table-parameter">Высота:</td>
+            <td class="featured__table-value">15 см</td>
+          </tr>
+        </table>
+        <img src="https://via.placeholder.com/" alt="" class="featured__img">
+        <p class="featured__price">Цена: 990 руб.</p>
+        <button class="button featured__button" type="button">Заказать</button>
       </section>
 
-      <section class="about-us">
-        <div class="about-us-wrapper">
-          <h2 class="about-us__title">Коротко о нас:</h2>
-          <ul class="advantages-list">
-            <li class="advantages-list__item">
-              <div class="advantages-element advantages-element--flower">
-                <p class="advantages-element__title">Экологически чистые материалы</p>
-              </div>
-            </li>
-            <li class="advantages-list__item">
-              <div class="advantages-element advantages-element--money">
-                <p class="advantages-element__title">Скандинавский стиль по российской цене </p>
-              </div>
-            </li>
-            <li class="advantages-list__item">
-              <div class="advantages-element advantages-element--heart">
-                <p class="advantages-element__title">величивает лайки на фотографиях</p>
-              </div>
-            </li>
-            <li class="advantages-list__item">
-              <div class="advantages-element advantages-element--threads">
-                <p class="advantages-element__title">Связано вручную с любовью и умилением</p>
-              </div>
-            </li>
-            <li class="advantages-list__item">
-              <div class="advantages-element advantages-element--rocket">
-                <p class="advantages-element__title">Поддержка отечественного производителя</p>
-              </div>
-            </li>
-            <li class="advantages-list__item">
-              <div class="advantages-element advantages-element--gift">
-                <p class="advantages-element__title">Поставляется в подарочной упаковке</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <section class="about">
+        <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__list-item">
+            <div class="about__list-element about__list-element--flower">
+              <p class="about__list-element-title">Экологически чистые материалы</p>
+            </div>
+          </li>
+          <li class="about__list-item">
+            <div class="about__list-element about__list-element--money">
+              <p class="about__list-element-title">Скандинавский стиль по российской цене </p>
+            </div>
+          </li>
+          <li class="about__list-item">
+            <div class="about__list-element about__list-element--heart">
+              <p class="about__list-element-title">величивает лайки на фотографиях</p>
+            </div>
+          </li>
+          <li class="about__list-item">
+            <div class="about__list-element about__list-element--threads">
+              <p class="about__list-element-title">Связано вручную с любовью и умилением</p>
+            </div>
+          </li>
+          <li class="about__list-item">
+            <div class="about__list-element about__list-element--rocket">
+              <p class="about__list-element-title">Поддержка отечественного производителя</p>
+            </div>
+          </li>
+          <li class="about__list-item">
+            <div class="about__list-element about__list-element--gift">
+              <p class="about__list-element-title">Поставляется в подарочной упаковке</p>
+            </div>
+          </li>
+        </ul>
       </section>
 
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer-wrapper">
-        <div class="page-footer__social social">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a href="http://instagramm.com" class="social__link">
@@ -128,7 +129,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="copyright">
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__img" src="#" alt="htmlacademy" >
