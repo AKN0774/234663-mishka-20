@@ -46,7 +46,7 @@
               <a href="#"><h3 class="product-card__title">Зайчик-попрыгайчик</h3></a>
               <p class="product-card__description">Рост 30 см, вес 200 г</p>
               <p class="product-card__price">1 200 руб.</p>
-              <button class="button product-card__button" type="button" aria-label="Добавить в корзину"></button>
+              <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
             </div>
           </li>
           <li class="catalog__item">
@@ -55,7 +55,7 @@
               <a href="#"><h3 class="product-card__title">Корзинка для белья</h3></a>
               <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
               <p class="product-card__price">690 руб.</p>
-              <button class="button product-card__button" type="button" aria-label="Добавить в корзину"></button>
+              <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
             </div>
           </li>
           <li class="catalog__item">
@@ -64,7 +64,7 @@
               <a href="#"><h3 class="product-card__title">Большая корзинка для игрушек</h3></a>
               <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
               <p class="product-card__price">1 500 руб.</p>
-              <button class="button product-card__button" type="button" aria-label="Добавить в корзину"></button>
+              <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
             </div>
           </li>
         </ul>
@@ -83,17 +83,17 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="http://instagramm.com" class="social__link">
+              <a href="http://instagramm.com" class="social__link social__link--insta">
                 <span class="visually-hidden">Инстаграмм</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="http://facebook.com" class="social__link">
+              <a href="http://facebook.com" class="social__link social__link--facebook">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="http://twitter.com" class="social__link">
+              <a href="http://twitter.com" class="social__link social__link--twitter">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
@@ -111,16 +111,14 @@
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
-        <fieldset>
-          <legend class="modal__form-legend">Выберите размер:</legend>
-          <input type="checkbox" name="size-S" id="size-S" class="visually-hidden" checked>
-          <label for="size-S" class="modal__form-label">S</label>
-          <input type="checkbox" name="size-M" id="size-M" class="visually-hidden">
-          <label for="size-M" class="modal__form-label">M</label>
-          <input type="checkbox" name="size-L" id="size-L" class="visually-hidden">
-          <label for="size-L" class="modal__form-label">L</label>
-        </fieldset>
-      <button class="modal__fofm-button button" type="submit">Добавить</button>
+        <p class="modal__form-text">Выберите размер:</p>
+        <input type="checkbox" name="size-S" id="size-S" class="visually-hidden" checked>
+        <label for="size-S" class="modal__form-label">S</label>
+        <input type="checkbox" name="size-M" id="size-M" class="visually-hidden">
+        <label for="size-M" class="modal__form-label">M</label>
+        <input type="checkbox" name="size-L" id="size-L" class="visually-hidden">
+        <label for="size-L" class="modal__form-label">L</label>
+      <button class="modal__form-button button" type="submit">Добавить</button>
       </form>
     </section>
 
