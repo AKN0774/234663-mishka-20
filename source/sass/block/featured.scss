@@ -1,3 +1,9 @@
+.featured {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 31px;
+}
 .featured__title-item {
   @include font-first($font, normal, bold);
   @include font-second(25px, 30px, $basic-black);

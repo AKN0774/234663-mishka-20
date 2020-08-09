@@ -1,3 +1,9 @@
+.about {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 31px;
+}
 .about__list {
   list-style: none;
   margin: 0;
@@ -9,5 +15,5 @@
 }
 .about__list-element-title {
   @include font-first($font, normal, bold);
-  @include font-second(17px, 20px, $basic-black);
+  @include font-second(25px, 20px, $basic-black);
 }

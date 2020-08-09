@@ -1,3 +1,8 @@
+.header {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .header__title {
   @include font-first($font, normal, bold);
   @include font-second(27px, 30px, $black-two);
