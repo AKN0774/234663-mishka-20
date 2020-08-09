@@ -1,19 +1,19 @@
 // Переменные цвета
 $basic-black: #000000;
-$black-one: #231F20;
+$black-one: #231f20;
 $black-two: #444444;
-$basic-grey: #E5E5E5;
-$grey-one: #F1F1F1;
-$grey-two: #ECECEC;
-$basic-white: #FFFFFF;
+$basic-grey: #e5e5e5;
+$grey-one: #f1f1f1;
+$grey-two: #ececec;
+$basic-white: #ffffff;
 $dark-green: #149080;
-$green-one: #56C3B2;
-$green-two: #62D1BA;
-$green-three: #6BC6B3;
-$light-green: #63D1BB;
+$green-one: #56c3b2;
+$green-two: #62d1ba;
+$green-three: #6bc6b3;
+$light-green: #63d1bb;
 
 // Переменные шрифта
-$font: 'Open sans';
+$font: "Open sans";
 
 //примеси
 
@@ -22,9 +22,9 @@ $font: 'Open sans';
   font-style: $style;
   font-weight: $weight;
 }
+
 @mixin font-second($size, $height, $color) {
   font-size: $size;
   line-height: $height;
   color: $color;
 }
-

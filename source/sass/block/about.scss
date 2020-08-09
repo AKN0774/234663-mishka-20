@@ -4,15 +4,18 @@
   padding-right: 30px;
   padding-top: 31px;
 }
+
 .about__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .about__title {
   @include font-first($font, normal, bold);
   @include font-second(25px, 30px, $basic-black);
 }
+
 .about__list-element-title {
   @include font-first($font, normal, bold);
   @include font-second(25px, 20px, $basic-black);

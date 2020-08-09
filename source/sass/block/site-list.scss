@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
 }
+
 .site-list__link {
   @include font-first($font, normal, bold);
   @include font-second(17px, 24px, $basic-black);

@@ -1,21 +1,26 @@
 .product-card {
   border: 1px solid $grey-two;
 }
+
 .product-card_link-img {
   text-decoration: none;
 }
-.product-card_link-title{
+
+.product-card_link-title {
   text-decoration: none;
 }
+
 .product-card__title {
   @include font-first($font, normal, bold);
   @include font-second(17px, 24px, $basic-black);
 }
+
 .product-card__description {
   @include font-first($font, normal, normal);
   @include font-second(13px, 30px, $black-two);
   border-bottom: 1px solid $grey-two;
 }
+
 .product-card__price {
   @include font-first($font, normal, bold);
   @include font-second(15px, 24px, $basic-black);

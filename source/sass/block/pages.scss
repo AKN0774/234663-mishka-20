@@ -3,15 +3,19 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .pages_interior {
   background-color: $light-green;
 }
+
 .pages_toys {
   background-color: $green-one;
 }
+
 .pages__link {
   text-decoration: none;
 }
+
 .pages__title {
   @include font-first($font, normal, bold);
   @include font-second(19px, 24px, $basic-white);
