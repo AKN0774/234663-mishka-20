@@ -1,8 +1,4 @@
 .header__title {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
-  color: $basic-black;
+  @include font-first($font, normal, bold);
+  @include font-second(27px, 30px, $black-two);
 }

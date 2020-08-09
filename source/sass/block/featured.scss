@@ -1,61 +1,33 @@
 .featured__title-item {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  color: $basic-black;
+  @include font-first($font, normal, bold);
+  @include font-second(25px, 30px, $basic-black);
   padding: 0;
   margin: 0;
 }
 .featured__title-promotion {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  color: $light-green;
+  @include font-first($font, normal, bold);
+  @include font-second(17px, 20px, $light-green);
   padding: 0;
   margin: 0;
 }
 .featured__description {
-  font-family: $font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  color: $black-two;
+  @include font-first($font, normal, normal);
+  @include font-second(15px, 24px, $black-two);
 }
 .featured__table-parameter {
-  font-family: $font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: $black-two;
+  @include font-first($font, normal, normal);
+  @include font-second(15px, 20px, $black-two);
 }
 .featured__table-value {
-  font-family: $font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: $black-two;
+  @include font-first($font, normal, normal);
+  @include font-second(15px, 20px, $black-two);
 }
 .featured__price {
-  font-family: $font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 24px;
-  color: $black-two;
+  @include font-first($font, normal, normal);
+  @include font-second(17px, 24px, $black-two);
 }
 .featured__button {
-  font-family: $font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 20px;
-  color: $black-two;
+  @include font-first($font, normal, normal);
+  @include font-second(17px, 20px, $black-two);
 }
 

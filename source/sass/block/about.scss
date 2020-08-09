@@ -4,18 +4,10 @@
   padding: 0;
 }
 .about__title {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  color: $basic-black;
+  @include font-first($font, normal, bold);
+  @include font-second(25px, 30px, $basic-black);
 }
 .about__list-element-title {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  color: $basic-black;
+  @include font-first($font, normal, bold);
+  @include font-second(17px, 20px, $basic-black);
 }

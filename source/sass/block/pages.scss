@@ -8,12 +8,8 @@
   background-color: $green-one;
 }
 .pages__title {
-  font-family: $font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: $basic-white;
+  @include font-first($font, normal, bold);
+  @include font-second(19px, 24px, $basic-white);
 }
 
 

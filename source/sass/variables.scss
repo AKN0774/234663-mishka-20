@@ -16,9 +16,15 @@ $light-green: #63D1BB;
 $font: 'Open sans';
 
 //примеси
-@mixin font-parameter($style;$weight;$size;$height) {
+
+@mixin font-first ($font, $style, $weight) {
+  font-family: $font;
   font-style: $style;
   font-weight: $weight;
+}
+@mixin font-second($size, $height, $color) {
   font-size: $size;
   line-height: $height;
+  color: $color;
 }
+
