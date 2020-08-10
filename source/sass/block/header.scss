@@ -5,6 +5,5 @@
 }
 
 .header__title {
-  @include font-first($font, normal, bold);
-  @include font-second(27px, 30px, $black-two);
+  @include font-parameter(normal, bold, 27px, 30px, $basic-black);
 }

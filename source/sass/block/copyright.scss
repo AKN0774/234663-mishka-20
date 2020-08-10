@@ -1,6 +1,5 @@
 .copyright__text {
-  @include font-first($font, normal, bold);
-  @include font-second(19px, 18px, $basic-black);
+  @include font-parameter(normal, bold, 19px, 18px, $basic-black);
 }
 
 .copyright__link {

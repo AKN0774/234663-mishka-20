@@ -11,12 +11,6 @@
   padding: 0;
 }
 
-.about__title {
-  @include font-first($font, normal, bold);
-  @include font-second(25px, 30px, $basic-black);
-}
-
 .about__list-element-title {
-  @include font-first($font, normal, bold);
-  @include font-second(25px, 20px, $basic-black);
+  @include font-parameter(normal, bold, 17px, 20px, $basic-black);
 }

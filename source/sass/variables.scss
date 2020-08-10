@@ -11,20 +11,3 @@ $green-one: #56c3b2;
 $green-two: #62d1ba;
 $green-three: #6bc6b3;
 $light-green: #63d1bb;
-
-// Переменные шрифта
-$font: "Open sans";
-
-//примеси
-
-@mixin font-first ($font, $style, $weight) {
-  font-family: $font;
-  font-style: $style;
-  font-weight: $weight;
-}
-
-@mixin font-second($size, $height, $color) {
-  font-size: $size;
-  line-height: $height;
-  color: $color;
-}

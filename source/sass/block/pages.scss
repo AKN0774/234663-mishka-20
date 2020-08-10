@@ -4,11 +4,11 @@
   padding-right: 30px;
 }
 
-.pages_interior {
+.pages__interior {
   background-color: $light-green;
 }
 
-.pages_toys {
+.pages__toys {
   background-color: $green-one;
 }
 
@@ -17,8 +17,7 @@
 }
 
 .pages__title {
-  @include font-first($font, normal, bold);
-  @include font-second(19px, 24px, $basic-white);
+  @include font-parameter(normal, bold, 19px, 24px, $basic-white);
   padding: 0;
   margin: 0;
 }
