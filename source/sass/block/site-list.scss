@@ -1,0 +1,10 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__link {
+  @include font-parameter(normal, bold, 17px, 24px, $basic-black);
+  text-decoration: none;
+}

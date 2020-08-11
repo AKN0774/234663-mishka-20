@@ -1,0 +1,9 @@
+.header {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header__title {
+  @include font-parameter(normal, bold, 27px, 30px, $basic-black);
+}
