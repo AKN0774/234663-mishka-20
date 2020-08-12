@@ -1,0 +1,40 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  border-top: 1px solid $green-two;
+}
+
+.form__legend {
+  @include font-parameter(normal, bold, 17px, 16px, $light-green);
+  text-transform: uppercase;
+}
+
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__list-item {
+  @include font-parameter(normal, bold, 17px, 18px, $basic-black);
+}
+
+.form__input::placeholder {
+  @include font-parameter(normal, normal, 17px, 19px, $basic-black);
+  opacity: 0.3;
+}
+
+.form__input-telefon::placeholder {
+  @include font-parameter(normal, normal, 18px, 19px, $basic-black);
+  opacity: 0.3;
+}
+
+.form__text {
+  @include font-parameter(normal, normal, 14px, 16px, $black-two);
+}
+
+.form__button {
+  @include font-parameter(normal, bold, 17px, 16px, $black-two);
+  background-color: transparent;
+}

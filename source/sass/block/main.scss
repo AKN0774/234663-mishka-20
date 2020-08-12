@@ -1,3 +1,14 @@
 .main {
   margin: 0 auto;
 }
+
+.main__form-wrapper {
+  margin: 0;
+  padding-left: 29px;
+  padding-right: 17px;
+  padding-bottom: 55px;
+}
+
+.main__text {
+  @include font-parameter(normal, normal, 13px, 24px, $black-two);
+}
