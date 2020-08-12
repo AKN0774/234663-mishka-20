@@ -1,0 +1,23 @@
+.video {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 58px;
+}
+
+.video__wrapper {
+  border: 1px solid $grey-two;
+}
+
+.video__title {
+  @include font-parameter(normal, bold, 17px, 24px, $basic-black);
+}
+
+.video__text {
+  @include font-parameter(normal, normal, 13px, 24px, $black-two);
+}
+
+.video__order {
+  @include font-parameter(normal, bold, 17px, 16px, $black-two);
+}
