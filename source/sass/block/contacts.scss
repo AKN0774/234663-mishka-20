@@ -30,3 +30,7 @@
 
   @include font-parameter(normal,normal, 15px, 30px, $black-two);
 }
+
+.contacts__write {
+  @include font-parameter(normal, bold, 18px, 20px, $black-two);
+}
