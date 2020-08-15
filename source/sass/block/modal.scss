@@ -23,5 +23,6 @@
 
 .modal__form-button {
   @include font-parameter(normal, bold, 17px, 16px, $basic-white);
+  font-family: inherit;
   background-color: $light-green;
 }
