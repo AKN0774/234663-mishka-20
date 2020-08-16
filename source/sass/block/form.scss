@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border-style: none;
-  border-top: 1px solid $green-two;
 }
 
 .form__legend {
@@ -43,4 +42,10 @@
 .form__button {
   @include font-parameter(normal, bold, 17px, 16px, $black-two);
   font-family: inherit;
+}
+
+.form__label-telefon,
+.form__label-email {
+  @include font-parameter(normal, bold, 17px, 16px, $light-green);
+  text-transform: uppercase;
 }
