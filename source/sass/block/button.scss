@@ -1,3 +1,7 @@
 .button {
-  @include font-parameter(normal, bold, 18px, 20px, $black-two);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid $black-two;
+  background-color: transparent;
 }

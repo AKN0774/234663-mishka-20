@@ -1,0 +1,36 @@
+.contacts {
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 39px;
+}
+
+.contacts__title-wrapper {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__title {
+  @include font-parameter(normal, bold, 18px, 30px, $basic-black);
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__email {
+  text-decoration: none;
+  border-bottom: 1px solid $green-two;
+
+  @include font-parameter(normal, normal, 15px, 30px, $black-two);
+}
+
+.contacts__address {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include font-parameter(normal,normal, 15px, 30px, $black-two);
+}
+
+.contacts__write {
+  @include font-parameter(normal, bold, 18px, 20px, $black-two);
+}
