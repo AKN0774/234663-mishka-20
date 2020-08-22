@@ -1,5 +1,10 @@
 .featured {
   margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 31px;
@@ -14,19 +19,32 @@
   @include font-parameter(normal, bold, 17px, 20px, $light-green);
   text-transform: uppercase;
   padding: 0;
+  padding-top: 3px;
   margin: 0;
 }
 
 .featured__description {
-  @include font-parameter(normal, bold, 15px, 24px, $black-two);
+  @include font-parameter(normal, normal, 15px, 24px, $black-two);
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
 }
 
 .featured__table-parameter {
-  @include font-parameter(normal, bold, 15px, 20px, $black-two);
+  @include font-parameter(normal, normal, 15px, 20px, $black-two);
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0;
+  width: 98px;
+  border-bottom: 1px solid $basic-grey;
 }
 
 .featured__table-value {
-  @include font-parameter(normal, bold, 15px, 20px, $black-two);
+  @include font-parameter(normal, normal, 15px, 20px, $black-two);
+  border-bottom: 1px solid $basic-grey;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .featured__price {
@@ -34,5 +52,5 @@
 }
 
 .featured__button {
-  @include font-parameter(normal, bold, 17px, 20px, $black-two);
+  @include font-parameter(normal, bold, 18px, 20px, $black-two);
 }

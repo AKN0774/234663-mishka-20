@@ -1,8 +1,18 @@
 .about {
+  box-sizing: border-box;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 31px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about__title {
+  margin: 0;
+  padding: 0;
 }
 
 .about__list {
@@ -13,4 +23,13 @@
 
 .about__list-element-title {
   @include font-parameter(normal, bold, 17px, 20px, $basic-black);
+  padding: 0;
+  padding-top: 83px;
+  margin: 0;
+}
+
+.about__list-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

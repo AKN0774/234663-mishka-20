@@ -1,5 +1,12 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright__text {
   @include font-parameter(normal, bold, 19px, 18px, $basic-black);
+  margin: 0;
+  padding: 0;
 }
 
 .copyright__link {

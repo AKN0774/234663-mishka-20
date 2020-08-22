@@ -4,6 +4,13 @@
   list-style: none;
 }
 
+.site-list__item {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 76px;
+  box-shadow: 0 1px 0 $grey-two, inset 0 1px 0 $grey-two;
+}
+
 .site-list__link {
   @include font-parameter(normal, bold, 17px, 24px, $basic-black);
   text-decoration: none;

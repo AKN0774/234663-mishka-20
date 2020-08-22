@@ -1,13 +1,21 @@
 .product-card {
+  width: 260px;
   border: 1px solid $grey-two;
+  display: grid;
+  grid-template-columns: 28px 102px 102px 28px;
+  grid-template-rows: auto auto auto auto;
 }
 
 .product-card__link-img {
   text-decoration: none;
+  grid-column: 1/5;
+  grid-row: 1/2;
 }
 
 .product-card__link-title {
   text-decoration: none;
+  grid-column: 2/4;
+  grid-row: 2/3;
 }
 
 .product-card__title {
@@ -17,8 +25,17 @@
 .product-card__description {
   @include font-parameter(normal, bold, 13px, 30px, $black-two);
   border-bottom: 1px solid $grey-two;
+  grid-column: 2/4;
+  grid-row: 3/4;
 }
 
 .product-card__price {
   @include font-parameter(normal, bold, 15px, 24px, $basic-black);
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.product-card__button {
+  grid-column: 3/4;
+  grid-row: 4/5;
 }

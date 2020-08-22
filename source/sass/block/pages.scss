@@ -1,7 +1,8 @@
 .pages {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .pages__interior {
@@ -13,7 +14,15 @@
 }
 
 .pages__link {
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
   text-decoration: none;
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 130px;
+  padding-bottom: 31px;
+  padding-top: 24px;
 }
 
 .pages__title {
