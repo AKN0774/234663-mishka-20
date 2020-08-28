@@ -9,6 +9,17 @@
   box-sizing: border-box;
   padding-left: 30px;
   padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .footer__social {

@@ -11,6 +11,10 @@
     flex-direction: row;
     justify-content: flex-start;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .pages__interior {
@@ -40,6 +44,10 @@
     padding-right: 167px;
     padding-bottom: 34px;
     padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
   }
 }
 
