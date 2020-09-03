@@ -19,6 +19,13 @@
     width: 668px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 1050px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .catalog__item {

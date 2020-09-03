@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) {
     width: 668px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
   }
 
@@ -24,4 +24,29 @@
 
 .footer__social {
   border-bottom: 1px solid $grey-two;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 274px;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 159px;
+    margin-top: 51px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 350px;
+    margin-top: 51px;
+    margin-bottom: 58px;
+  }
 }
