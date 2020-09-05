@@ -1,19 +1,11 @@
 .reviews {
   box-sizing: border-box;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-top: 58px;
-  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    padding: 0;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-bottom: 68px;
     margin-top: 83px;
     display: grid;
@@ -27,9 +19,7 @@
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
-    width: 1050px;
     margin-top: 83px;
-    padding: 0;
     display: grid;
     grid-template-columns: 525px 525px;
     grid-template-rows: auto auto auto;

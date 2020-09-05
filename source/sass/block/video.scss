@@ -5,24 +5,19 @@
 }
 
 .video__wrapper {
-  margin: 0 auto;
   border: 1px solid $grey-two;
-  width: 260px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    width: 668px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
     display: grid;
     grid-template-columns: 684px 366px;
     grid-template-rows: auto auto auto;
@@ -75,7 +70,6 @@
 .video__text {
   @include font-parameter(normal, normal, 13px, 24px, $black-two);
   padding-left: 34px;
-  padding-right: 34px;
   margin: 0;
   margin-top: 35px;
 
