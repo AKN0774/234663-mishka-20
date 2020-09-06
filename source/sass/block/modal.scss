@@ -1,5 +1,8 @@
 .modal {
-  visibility: hidden;
+  display: none;
+}
+
+.modal__wrapper {
   width: 260px;
   margin: 0 auto;
   padding-top: 29px;
@@ -9,6 +12,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 556px;
+  }
 }
 
 .modal__form {
@@ -28,10 +35,18 @@
   @include font-parameter(normal, bold, 25px, 30px, $basic-black);
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 30px, 57px, $basic-black);
+  }
 }
 
 .modal__form-text {
   @include font-parameter(normal, normal, 15px, 30px, $black-two);
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, normal, 17px, 30px, $black-two);
+  }
 }
 
 .modal__form-label {

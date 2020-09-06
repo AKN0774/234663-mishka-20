@@ -9,40 +9,39 @@
   <body class="body">
 
     <header class="header">
-      <div class="header__wrapper container">
-        <a class="header__logo" href="index.html"><img src="img/logo-mobile.svg" alt="Лого магазина Мишка" width="86" height="35">
-        </a>
-        <nav class="main-nav">
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo" href="index.html"><img src="img/logo-mobile.svg" alt="Лого магазина Мишка" width="86" height="35"></a>
           <button class="main-nav__toggle">
-            <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list site-list-nav">
-              <li class="site-list__item site-list__item-catalog"><!--Добавлен класс site-list__item-catalog для позиционирования элемента в планшетной версии-->
-                <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item site-list__item-form"><!--Добавлен класс site-list__item-form для позиционирования элемента в планшетной версии-->
-                <a class="site-list__link site-list__link--form" href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list site-list site-list-user">
-              <li class="site-list__item site-list__item-search"><!--Добавлен класс site-list__item-search для позиционирования элемента в планшетной версии-->
-                <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
-              </li>
-              <li class="site-list__item site-list__item-cart"><!--Добавлен класс site-list__item-cart для позиционирования элемента в планшетной версии-->
-                <a class="site-list__link site-list__link--cart" href="cart.html" >Корзина: пока пуста</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list site-list site-list-promotion"><!--Добавлен ещё один список не видимый в мобильной версии, но используемый в других вариантах-->
-              <li class="site-list__item site-list__item-new">
-                <a href="#" class="site-list__link site-list__link--new">Новые поступления</a>
-              </li>
-              <li class="site-list__item site-list__item-sell-out">
-                <a href="#" class="site-list__link site-list__link--sell-out">Распродажа</a>
-              </li>
-            </ul>
-            <p class="header__text">Бесплатная доставка по России</p><!--Добавлен текстовое поле не видимое в моб.версии-->
-          </div>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list site-list-nav">
+            <li class="site-list__item site-list__item-nav"><!--Добавлен класс site-list__item-catalog для позиционирования элемента в планшетной версии-->
+              <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item-nav"><!--Добавлен класс site-list__item-form для позиционирования элемента в планшетной версии-->
+              <a class="site-list__link site-list__link--form" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-list site-list-user">
+            <li class="site-list__item site-list__item-search"><!--Добавлен класс site-list__item-search для позиционирования элемента в планшетной версии-->
+              <a class="site-list__link site-list__link--search" href="#"><span>Поиск по сайту</span></a>
+            </li>
+            <li class="site-list__item site-list__item-cart"><!--Добавлен класс site-list__item-cart для позиционирования элемента в планшетной версии-->
+              <a class="site-list__link site-list__link--cart" href="cart.html" >Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-list site-list-promotion"><!--Добавлен ещё один список не видимый в мобильной версии, но используемый в других вариантах-->
+            <li class="site-list__item site-list__item-new">
+              <a href="#" class="site-list__link site-list__link--new">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item-sell-out">
+              <a href="#" class="site-list__link site-list__link--sell-out">Распродажа</a>
+            </li>
+          </ul>
+          <p class="header__text">Бесплатная доставка по России</p><!--Добавлен текстовое поле не видимое в моб.версии-->
         </nav>
       </div>
       <div class="header__title-wrapper--catalog">
@@ -103,7 +102,7 @@
 
     <footer class="footer">
       <div class="footer__wrapper container">
-        <a class="footer__logo"><img src="img/logo-footer.svg" alt="Лого магазина Мишка" width="86" height="35">
+        <a class="footer__logo" href="index.html"><img src="img/logo-footer.svg" alt="Лого магазина Мишка" width="86" height="35">
         </a>
         <div class="footer__social social">
           <ul class="social__list">
@@ -134,17 +133,21 @@
     </footer>
 
     <section class="modal">
-      <h2 class="modal__title head">Добавить в корзину</h2>
-      <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
-        <p class="modal__form-text">Выберите размер:</p>
-        <input type="checkbox" name="size-S" id="size-S" class="visually-hidden" checked>
-        <label for="size-S" class="modal__form-label">S</label>
-        <input type="checkbox" name="size-M" id="size-M" class="visually-hidden">
-        <label for="size-M" class="modal__form-label">M</label>
-        <input type="checkbox" name="size-L" id="size-L" class="visually-hidden">
-        <label for="size-L" class="modal__form-label">L</label>
-      <button class="modal__form-button button" type="submit">Добавить</button>
-      </form>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form action="https://echo.htmlacademy.ru" class="modal__form">
+          <p class="modal__form-text">Выберите размер:</p>
+          <div class="modal__form-input-wrapper">
+            <input type="checkbox" name="size-S" id="size-S" class="visually-hidden" checked>
+            <label for="size-S" class="modal__form-label">S</label>
+            <input type="checkbox" name="size-M" id="size-M" class="visually-hidden">
+            <label for="size-M" class="modal__form-label">M</label>
+            <input type="checkbox" name="size-L" id="size-L" class="visually-hidden">
+            <label for="size-L" class="modal__form-label">L</label>
+          </div>
+        <button class="modal__form-button button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
 
   </body>
