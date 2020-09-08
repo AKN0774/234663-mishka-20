@@ -103,6 +103,16 @@
   @media (min-width: $tablet-width) {
     @include font-parameter(normal, normal, 17px, 30px, $black-two);
   }
+
+  &:hover {
+    color: $green-two;
+    border-color: $link-green;
+  }
+
+  &:active {
+    color: $link-green;
+    border-color: lighten($link-green, 90%);
+  }
 }
 
 .contact__address-wrapper {
