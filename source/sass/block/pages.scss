@@ -1,0 +1,23 @@
+.pages {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pages__interior {
+  background-color: $light-green;
+}
+
+.pages__toys {
+  background-color: $green-one;
+}
+
+.pages__link {
+  text-decoration: none;
+}
+
+.pages__title {
+  @include font-parameter(normal, bold, 19px, 24px, $basic-white);
+  padding: 0;
+  margin: 0;
+}

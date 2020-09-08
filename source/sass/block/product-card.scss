@@ -1,0 +1,24 @@
+.product-card {
+  border: 1px solid $grey-two;
+}
+
+.product-card__link-img {
+  text-decoration: none;
+}
+
+.product-card__link-title {
+  text-decoration: none;
+}
+
+.product-card__title {
+  @include font-parameter(normal, bold, 17px, 24px, $basic-black);
+}
+
+.product-card__description {
+  @include font-parameter(normal, bold, 13px, 30px, $black-two);
+  border-bottom: 1px solid $grey-two;
+}
+
+.product-card__price {
+  @include font-parameter(normal, bold, 15px, 24px, $basic-black);
+}

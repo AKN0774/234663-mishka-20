@@ -1,0 +1,9 @@
+//Примеси
+
+@mixin font-parameter ($style, $weight, $size, $height, $color) {
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: $height;
+}
