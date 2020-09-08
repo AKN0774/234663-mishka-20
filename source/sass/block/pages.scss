@@ -1,7 +1,22 @@
 .pages {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: 0 auto;
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .pages__interior {
@@ -12,12 +27,102 @@
   background-color: $green-one;
 }
 
+.pages__link--interior {
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 23px;
+    left: 244px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+    opacity: 0.2;
+    background-color: $light-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 23px;
+      left: 427px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      opacity: 0.2;
+      background-color: $light-green;
+    }
+  }
+}
+
+.pages__link--toys {
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 23px;
+    left: 233px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    opacity: 0.2;
+    background-color: $green-one;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 23px;
+      left: 427px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      opacity: 0.2;
+      background-color: $light-green;
+    }
+  }
+}
+
 .pages__link {
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
   text-decoration: none;
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 130px;
+  padding-bottom: 31px;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    margin: 0;
+    padding-left: 36px;
+    padding-right: 167px;
+    padding-bottom: 34px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    margin: 0;
+    padding-left: 37px;
+    padding-right: 350px;
+    padding-bottom: 34px;
+    padding-top: 25px;
+  }
 }
 
 .pages__title {
   @include font-parameter(normal, bold, 19px, 24px, $basic-white);
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 20px, 30px, $basic-white);
+  }
 }

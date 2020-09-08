@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,30 +10,42 @@
 
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo" href="index.html"><img src="https://via.placeholder.com/" alt="Лого магазина Мишка" width="86" height="35">
-        </a>
-        <nav class="main-nav">
+        <div class="header__logo-wrapper">
+          <a class="header__link-logo" href="index.html"><img src="img/logo-mobile.svg" alt="Лого магазина Мишка" width="86" height="35"></a>
           <button class="main-nav__toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--cart" href="cart.html" >Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list site-list-nav">
+            <li class="site-list__item site-list__item-nav"><!--Добавлен класс site-list__item-catalog для позиционирования элемента в планшетной версии-->
+              <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item-nav"><!--Добавлен класс site-list__item-form для позиционирования элемента в планшетной версии-->
+              <a class="site-list__link site-list__link--form" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-list site-list-user">
+            <li class="site-list__item site-list__item-search"><!--Добавлен класс site-list__item-search для позиционирования элемента в планшетной версии-->
+              <a class="site-list__link site-list__link--search" href="#"><span>Поиск по сайту</span></a>
+            </li>
+            <li class="site-list__item site-list__item-cart"><!--Добавлен класс site-list__item-cart для позиционирования элемента в планшетной версии-->
+              <a class="site-list__link site-list__link--cart" href="cart.html" >Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-list site-list-promotion"><!--Добавлен ещё один список не видимый в мобильной версии, но используемый в других вариантах-->
+            <li class="site-list__item site-list__item-new">
+              <a href="#" class="site-list__link site-list__link--new">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item-sell-out">
+              <a href="#" class="site-list__link site-list__link--sell-out">Распродажа</a>
+            </li>
+          </ul>
+          <p class="header__text">Бесплатная доставка по России</p><!--Добавлен текстовое поле не видимое в моб.версии-->
         </nav>
-        <h1 class="header__title">Каталог товаров</h1>
+      </div>
+      <div class="header__title-wrapper--catalog">
+        <h1 class="header__title header__title--catalog">Каталог товаров</h1>
       </div>
     </header>
 
@@ -40,12 +53,14 @@
 
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="catalog__list">
+        <ul class="catalog__list container">
           <li class="catalog__item">
             <div class="product-card">
               <a href="#" class="product-card__link-img"><img class="product-card__img" src="https://via.placeholder.com/" alt="Вязаный Зайчик-попрыгайчик" ></a>
-              <a href="#" class="product-card__link-title"><h3 class="product-card__title">Зайчик-попрыгайчик</h3></a>
-              <p class="product-card__description">Рост 30 см, вес 200 г</p>
+              <div class="product-card__title-wrapper">
+                <a href="#" class="product-card__link-title"><h3 class="product-card__title">Зайчик-попрыгайчик</h3></a>
+                <p class="product-card__description">Рост 30 см, вес 200 г</p>
+              </div>
               <p class="product-card__price">1 200 руб.</p>
               <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
             </div>
@@ -53,8 +68,10 @@
           <li class="catalog__item">
             <div class="product-card">
               <a href="#" class="product-card__link-img"><img class="product-card__img" src="https://via.placeholder.com/" alt="Корзинка для белья" ></a>
-              <a href="#" class="product-card__link-title"><h3 class="product-card__title">Корзинка для белья</h3></a>
-              <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
+              <div class="product-card__title-wrapper">
+                <a href="#" class="product-card__link-title"><h3 class="product-card__title">Корзинка для белья</h3></a>
+                <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
+              </div>
               <p class="product-card__price">690 руб.</p>
               <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
             </div>
@@ -62,8 +79,10 @@
           <li class="catalog__item">
             <div class="product-card">
               <a href="#" class="product-card__link-img"><img class="product-card__img" src="https://via.placeholder.com/" alt="Большая корзинка для игрушек" ></a>
-              <a href="#" class="product-card__link-title"><h3 class="product-card__title">Большая корзинка для игрушек</h3></a>
-              <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
+              <div class="product-card__title-wrapper">
+                <a href="#" class="product-card__link-title"><h3 class="product-card__title">Большая корзинка для игрушек</h3></a>
+                <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
+              </div>
               <p class="product-card__price">1 500 руб.</p>
               <button class="product-card__button" type="button" aria-label="Добавить в корзину"></button>
             </div>
@@ -72,9 +91,9 @@
       </section>
 
       <section class="video">
-        <div class="video__wrapper">
-          <h2 class="video__title">Процесс производства</h2>
-        <video class="video__player" src="https://via.placeholder.com/" controls width="260" height="150" poster="https://via.placeholder.com/"></video>
+        <div class="video__wrapper container">
+        <h2 class="video__title">Процесс производства</h2>
+        <video class="video__player" src="https://via.placeholder.com/" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <button class="video__order button" type="button">Сделать заказ</button>
         </div>
@@ -82,21 +101,23 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper container">
+        <a class="footer__logo" href="index.html"><img src="img/logo-footer.svg" alt="Лого магазина Мишка" width="86" height="35">
+        </a>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="http://instagramm.com" class="social__link social__link--insta">
+              <a href="http://instagramm.com" class="social__link social__link--insta"><!--Добавлен класс с модификатором-->
                 <span class="visually-hidden">Инстаграмм</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="http://facebook.com" class="social__link social__link--facebook">
+              <a href="http://facebook.com" class="social__link social__link--facebook"><!--Добавлен класс с модификатором-->
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="http://twitter.com" class="social__link social__link--twitter">
+              <a href="http://twitter.com" class="social__link social__link--twitter"><!--Добавлен класс с модификатором-->
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
@@ -105,25 +126,30 @@
         <div class="copyright">
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__img" src="https://via.placeholder.com/" alt="htmlacademy" width="27" height="35">
+            <img class="copyright__img" src="img/logo-htmlacademy.svg" alt="htmlacademy" width="27" height="35">
           </a>
         </div>
       </div>
     </footer>
 
     <section class="modal">
-      <h2 class="modal__title head">Добавить в корзину</h2>
-      <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
-        <p class="modal__form-text">Выберите размер:</p>
-        <input type="checkbox" name="size-S" id="size-S" class="visually-hidden" checked>
-        <label for="size-S" class="modal__form-label">S</label>
-        <input type="checkbox" name="size-M" id="size-M" class="visually-hidden">
-        <label for="size-M" class="modal__form-label">M</label>
-        <input type="checkbox" name="size-L" id="size-L" class="visually-hidden">
-        <label for="size-L" class="modal__form-label">L</label>
-      <button class="modal__form-button button" type="submit">Добавить</button>
-      </form>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form action="https://echo.htmlacademy.ru" class="modal__form">
+          <p class="modal__form-text">Выберите размер:</p>
+          <div class="modal__form-input-wrapper">
+            <input type="checkbox" name="size-S" id="size-S" class="visually-hidden" checked>
+            <label for="size-S" class="modal__form-label">S</label>
+            <input type="checkbox" name="size-M" id="size-M" class="visually-hidden">
+            <label for="size-M" class="modal__form-label">M</label>
+            <input type="checkbox" name="size-L" id="size-L" class="visually-hidden">
+            <label for="size-L" class="modal__form-label">L</label>
+          </div>
+        <button class="modal__form-button button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
-
+    <script src="js/app.js">
+    </script>
   </body>
 </html>

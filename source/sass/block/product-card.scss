@@ -1,9 +1,59 @@
 .product-card {
+  width: 260px;
   border: 1px solid $grey-two;
+  display: grid;
+  grid-template-columns: 28px 102px 102px 28px;
+  grid-template-rows: auto auto auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    display: grid;
+    grid-template-columns: 334px 249px 85px;
+    grid-template-rows: auto auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    display: grid;
+    grid-template-columns: 30px 230px 26px 30px;
+    grid-template-rows: auto auto auto;
+  }
 }
 
 .product-card__link-img {
   text-decoration: none;
+  grid-column: 1/5;
+  grid-row: 1/2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+}
+
+.product-card__title-wrapper {
+  box-sizing: border-box;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  border-bottom: 1px solid $grey-two;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    min-height: 124px;
+    padding-top: 26px;
+    padding-right: 25px;
+  }
 }
 
 .product-card__link-title {
@@ -12,13 +62,53 @@
 
 .product-card__title {
   @include font-parameter(normal, bold, 17px, 24px, $basic-black);
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 20px, 24px, $basic-black);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .product-card__description {
   @include font-parameter(normal, bold, 13px, 30px, $black-two);
-  border-bottom: 1px solid $grey-two;
+
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, normal, 15px, 30px, $black-two);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    margin-top: 7px;
+  }
 }
 
 .product-card__price {
   @include font-parameter(normal, bold, 15px, 24px, $basic-black);
+  grid-column: 2/3;
+  grid-row: 4/5;
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 17px, 24px, $basic-black);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+
+.product-card__button {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+@media (min-width: $desktop-width) {
+  grid-column: 3/4;
+  grid-row: 4/5;
 }

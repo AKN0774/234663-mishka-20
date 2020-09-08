@@ -4,4 +4,9 @@
   text-align: center;
   border: 2px solid $black-two;
   background-color: transparent;
+
+  &:hover {
+    background-color: $black-two;
+    color: $basic-white;
+  }
 }
