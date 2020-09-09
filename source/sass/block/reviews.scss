@@ -1,0 +1,215 @@
+.reviews {
+  box-sizing: border-box;
+  padding-top: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-bottom: 85px;
+    display: grid;
+    grid-template-columns: 334px 334px;
+    grid-template-rows: auto auto auto;
+    align-items: start;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    margin-top: 83px;
+    display: grid;
+    grid-template-columns: 525px 525px;
+    grid-template-rows: auto auto auto;
+    align-items: start;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+}
+
+.reviews__title {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 174px;
+  }
+}
+
+.reviews__text {
+  @include font-parameter(normal, normal, 15px, 30px, $black-two);
+  padding: 0;
+  padding-top: 13px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, normal, 17px, 30px, $black-two);
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 0;
+    margin-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-parameter(normal, normal, 17px, 30px, $black-two);
+    padding-left: 174px;
+  }
+}
+
+.reviews__author {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 174px;
+  }
+}
+
+.reviews__author-name {
+  @include font-parameter(normal, bold, 17px, 24px, $basic-black);
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 18px, 24px, $basic-black);
+  }
+}
+
+.reviews__autor-nickname {
+  @include font-parameter(normal, normal, 16px, 24px, $basic-black);
+  padding: 0;
+  padding-top: 8px;
+  margin: 0;
+}
+
+.reviews__button {
+  display: flex;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 140px;
+    margin-left: auto;
+    margin-top: 67px;
+    margin-right: 20px;
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 130px;
+  height: 52px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+  }
+}
+
+.reviews__prev {
+  border-bottom: 1px solid $basic-grey;
+  border-left: 1px solid $basic-grey;
+  border-top: 1px solid $basic-grey;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    background-image: url("../img/icon-left-arrow.svg");
+    top: 13px;
+    left: 37px;
+    width: 50px;
+    height: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      background-image: url("../img/icon-left-arrow.svg");
+      top: 13px;
+      left: 3px;
+      width: 50px;
+      height: 26px;
+    }
+  }
+}
+
+.reviews__next {
+  border-bottom: 1px solid $basic-grey;
+  border-right: 1px solid $basic-grey;
+  border-top: 1px solid $basic-grey;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    background-image: url("../img/icon-right-arrow.svg");
+    top: 13px;
+    left: 37px;
+    width: 50px;
+    height: 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      background-image: url("../img/icon-right-arrow.svg");
+      top: 13px;
+      left: 20px;
+      width: 50px;
+      height: 26px;
+    }
+  }
+}
+
+.reviews__write {
+  @include font-parameter(normal, bold, 18px, 20px, $black-two);
+  margin-top: 38px;
+  width: 260px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 17px, 20px, $black-two);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 75px;
+    width: 171px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: auto;
+    margin-top: 79px;
+  }
+}

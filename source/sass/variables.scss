@@ -2,6 +2,8 @@
 $basic-black: #000000;
 $black-one: #231f20;
 $black-two: #444444;
+$basic-black-rgb: rgba(0, 0, 0, 0.1);
+$black-two-rgb: rgba(68, 68, 68, 0.1);
 $basic-grey: #e5e5e5;
 $grey-one: #f1f1f1;
 $grey-two: #ececec;
@@ -11,3 +13,11 @@ $green-one: #56c3b2;
 $green-two: #62d1ba;
 $green-three: #6bc6b3;
 $light-green: #63d1bb;
+$link-green: #46c1ae;
+$grey-three: #c6c6c6;
+//$shadow: rgba(0, 1, 1, 0.25);
+
+//Переменные ширины вьюпорта
+$mobil-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1150px;

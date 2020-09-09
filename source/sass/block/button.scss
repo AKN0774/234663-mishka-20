@@ -1,3 +1,13 @@
 .button {
-  @include font-parameter(normal, bold, 18px, 20px, $black-two);
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid $black-two;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $black-two;
+    color: $basic-white;
+  }
 }

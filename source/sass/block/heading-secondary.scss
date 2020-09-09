@@ -1,3 +1,8 @@
 .heading-secondary {
   @include font-parameter(normal, bold, 25px, 30px, $basic-black);
+
+  //Планшетная версия
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 43px, 50px, $basic-black);
+  }
 }

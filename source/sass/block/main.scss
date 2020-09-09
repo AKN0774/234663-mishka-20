@@ -1,3 +1,31 @@
 .main {
   margin: 0 auto;
 }
+
+.main__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+  }
+}
+
+.main__text {
+  @include font-parameter(normal, normal, 13px, 24px, $black-two);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, normal, 17px, 30px, $black-two);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+    padding-right: 223px;
+  }
+}

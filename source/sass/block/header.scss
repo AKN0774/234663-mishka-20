@@ -1,9 +1,212 @@
 .header {
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+
+  //Планшетная версия
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
+.header__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: 668px;
+    grid-template-rows: auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1050px;
+    grid-template-rows: auto auto;
+  }
+}
+
+.header__logo-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 116px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0;
+    margin-top: 22px;
+    margin-bottom: 21px;
+    padding: 0;
+    width: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 21px;
+  }
+}
+
+.header__link-logo {
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__title {
   @include font-parameter(normal, bold, 27px, 30px, $basic-black);
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 74px;
+  padding-bottom: 120px;
+  text-align: center;
+
+  //Планшетная версия
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 43px, 50px, $basic-black);
+    margin: 0 auto;
+    width: 668px;
+    padding-top: 162px;
+    padding-bottom: 490px;
+    padding-right: 5px;
+  }
+
+  //Десктопная версия
+  @media (min-width: $desktop-width) {
+    @include font-parameter(normal, bold, 53px, 57px, $basic-black);
+    width: 1050px;
+    padding-top: 158px;
+    padding-bottom: 491px;
+  }
+}
+
+.header__title-wrapper--index {
+  margin: 0 auto;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    margin: 0;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    margin-top: 20px;
+  }
+}
+
+.header__title-wrapper--catalog {
+  background-color: $grey-one;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    margin-top: 20px;
+  }
+}
+
+.header__title--catalog {
+  padding-bottom: 73px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding-top: 101px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding-bottom: 95px;
+  }
+}
+
+.header__title-wrapper--form {
+  background-color: $grey-one;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    margin-top: 20px;
+  }
+}
+
+.header__title--form {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding-top: 101px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding-bottom: 95px;
+  }
+}
+
+.header__text {
+  @include font-parameter(normal, normal, 15px, 24px, $black-two);
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    padding-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
 }
