@@ -3,11 +3,12 @@
   list-style: none;
   padding: 0;
   padding-top: 25px;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
   width: 142px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
     margin: 0;

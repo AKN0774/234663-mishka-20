@@ -1,12 +1,13 @@
 .about {
   box-sizing: border-box;
-  padding-top: 31px;
+  padding-top: 29px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
-    margin-top: 58px;
+    padding-top: 55px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +33,7 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding-top: 43px;
   }
 }
 

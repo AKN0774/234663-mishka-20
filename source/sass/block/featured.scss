@@ -4,13 +4,15 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 31px;
+  padding-bottom: 45px;
 
   //Планшетная версия
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 292px 258px 118px;
     grid-template-rows: auto auto auto auto auto;
-    margin-top: 39px;
+    margin-top: 21px;
+    padding-bottom: 54px;
   }
 
   //Десктопная версия
@@ -48,6 +50,9 @@
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
     grid-row: 1/2;
+    padding-right: 6px;
+    padding-top: 5px;
+    text-align: center;
 
     @include font-parameter(normal, bold, 17px, 17px, $light-green);
   }
@@ -60,9 +65,10 @@
 
 .featured__description {
   @include font-parameter(normal, normal, 15px, 24px, $black-two);
+  margin: 0;
   padding: 0;
   padding-top: 18px;
-  padding-bottom: 21px;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -83,6 +89,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 3/4;
+    padding: 0;
+    padding-top: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,28 +102,40 @@
 .featured__table-parameter {
   @include font-parameter(normal, normal, 15px, 20px, $black-two);
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 5px;
+  padding-bottom: 13px;
   margin: 0;
-  width: 98px;
+  width: 93px;
   border-bottom: 1px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 92px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+  }
 }
 
 .featured__table-value {
   @include font-parameter(normal, normal, 15px, 20px, $black-two);
   border-bottom: 1px solid $basic-grey;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 5px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-bottom: 12px;
+  }
 }
 
 .featured__img {
-  padding-top: 28px;
+  padding-top: 23px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
     grid-row: 2/6;
     width: 303px;
     height: 404px;
+    margin-left: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,13 +147,19 @@
 .featured__price {
   @include font-parameter(normal, bold, 17px, 24px, $black-two);
 
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-right: 2px;
+  padding-bottom: 23px;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 4/5;
-    text-align: center;
-    padding: 0;
-    padding-top: 57px;
-    padding-bottom: 33px;
+    padding-top: 39px;
+    padding-right: 2px;
+    padding-bottom: 16px;
 
     @include font-parameter(normal, bold, 20px, 24px, $black-two);
   }
@@ -147,12 +173,14 @@
 .featured__button {
   @include font-parameter(normal, bold, 18px, 20px, $black-two);
   width: 260px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 5/6;
+    width: 292px;
+    height: 52px;
 
     @include font-parameter(normal, bold, 17px, 20px, $black-two);
   }

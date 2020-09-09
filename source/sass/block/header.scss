@@ -60,7 +60,7 @@
 .header__link-logo {
   display: block;
   margin-top: 22px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -83,7 +83,7 @@
   @include font-parameter(normal, bold, 27px, 30px, $basic-black);
   width: 260px;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 74px;
   padding-bottom: 120px;
   text-align: center;
 
@@ -92,8 +92,9 @@
     @include font-parameter(normal, bold, 43px, 50px, $basic-black);
     margin: 0 auto;
     width: 668px;
-    padding-top: 154px;
-    padding-bottom: 503px;
+    padding-top: 162px;
+    padding-bottom: 490px;
+    padding-right: 5px;
   }
 
   //Десктопная версия
@@ -120,6 +121,7 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: auto;
+    margin-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,10 +149,12 @@
 }
 
 .header__title--catalog {
+  padding-bottom: 73px;
+
   @media (min-width: $tablet-width) {
     width: 668px;
     padding-top: 101px;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {

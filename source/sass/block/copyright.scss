@@ -3,6 +3,7 @@
   width: 182px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -15,9 +16,11 @@
   @include font-parameter(normal, bold, 19px, 18px, $basic-black);
   margin: 0;
   padding: 0;
+  padding-top: 28px;
 }
 
 .copyright__link {
   display: block;
   text-decoration: none;
+  padding-top: 19px;
 }

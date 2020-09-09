@@ -33,13 +33,27 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 23px;
-    left: 244px;
+    top: 22px;
+    left: 245px;
     width: 40px;
     height: 62px;
     background-image: url("../img/icon-interior.svg");
     opacity: 0.2;
     background-color: $light-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 30px;
+      left: 256px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      opacity: 0.2;
+      background-color: $light-green;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -63,13 +77,27 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 23px;
-    left: 233px;
+    top: 22px;
+    left: 230px;
     width: 60px;
     height: 60px;
     background-image: url("../img/icon-toy.svg");
     opacity: 0.2;
     background-color: $green-one;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 30px;
+      left: 240px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      opacity: 0.2;
+      background-color: $green-one;
+    }
   }
 
   @media (min-width: $desktop-width) {
