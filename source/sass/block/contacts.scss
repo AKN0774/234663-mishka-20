@@ -73,7 +73,6 @@
       height: 82px;
       top: -26px;
       right: -331px;
-
     }
   }
 
@@ -234,7 +233,7 @@
     }
   }
 
-   &::before {
+  &::before {
     content: " ";
     position: absolute;
     background-image: url("../img/icon-map-pin.svg");
