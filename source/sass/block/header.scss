@@ -9,6 +9,24 @@
   }
 }
 
+.header__bottom-background {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    align-self: end;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-bottom: -6px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat no-repeat;
+    background-size: 768px 34px;
+    background-position: center 0;
+    z-index: 30;
+    height: 34px;
+  }
+}
+
 .header__wrapper {
   margin: 0 auto;
   padding: 0;
@@ -39,21 +57,24 @@
   position: relative;
   box-sizing: border-box;
   padding-left: 116px;
+  z-index: 20;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 0;
-    margin-top: 22px;
-    margin-bottom: 21px;
+    margin-top: 14px;
+    margin-bottom: 7px;
+    margin-left: -2px;
     padding: 0;
     width: 120px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    margin-top: 22px;
-    margin-bottom: 21px;
+    margin-top: 9px;
+    margin-bottom: 7px;
+    width: 150px;
   }
 }
 
@@ -77,10 +98,24 @@
   &:active {
     opacity: 0.3;
   }
+
+  & img {
+    @media (min-width: $tablet-width) {
+      width: 113px;
+      height: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 149px;
+      height: 72px;
+    }
+  }
 }
 
 .header__title {
   @include font-parameter(normal, bold, 27px, 30px, $basic-black);
+  display: block;
+  box-sizing: border-box;
   width: 260px;
   margin: 0 auto;
   padding-top: 74px;
@@ -92,9 +127,10 @@
     @include font-parameter(normal, bold, 43px, 50px, $basic-black);
     margin: 0 auto;
     width: 668px;
-    padding-top: 162px;
-    padding-bottom: 490px;
-    padding-right: 5px;
+    padding-top: 153px;
+    padding-bottom: 502px;
+    padding-left: 79px;
+    padding-right: 92px;
   }
 
   //Десктопная версия
@@ -104,6 +140,12 @@
     padding-top: 158px;
     padding-bottom: 491px;
   }
+
+  & br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .header__title-wrapper--index {
@@ -111,7 +153,13 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: auto;
+  background-size: 575px auto;
+  background-color: $grey-back;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -119,17 +167,24 @@
     margin: 0;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: auto;
-    margin-top: 15px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/hero-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
+    background-position: center -3px;
+    background-size: 1150px auto;
     margin-top: 20px;
+    border-top: 1px solid $basic-black;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+        background-size: 1150 auto;
+      }
+    }
   }
 }
 
@@ -139,6 +194,11 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 2/5;
+    margin-top: 20px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: repeat no-repeat;
+    background-position: center bottom;
+    background-size: 768px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -153,8 +213,9 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
-    padding-top: 101px;
-    padding-bottom: 70px;
+    padding-top: 102px;
+    padding-bottom: 85px;
+    padding-left: 94px;
   }
 
   @media (min-width: $desktop-width) {
@@ -179,6 +240,8 @@
 }
 
 .header__title--form {
+  padding-bottom: 73px;
+
   @media (min-width: $tablet-width) {
     width: 668px;
     padding-top: 101px;
@@ -202,7 +265,7 @@
     padding: 0;
     margin: 0;
     text-align: right;
-    padding-top: 21px;
+    padding-top: 28px;
   }
 
   @media (min-width: $desktop-width) {

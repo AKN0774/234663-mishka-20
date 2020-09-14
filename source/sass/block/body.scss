@@ -1,6 +1,5 @@
 .body {
   background-color: $basic-white;
-  margin: 0 auto;
   font-family: "Open sans", "Verdana", "Geneva", "Tahoma", sans-serif;
 
   @include font-parameter(normal, normal, 15px, 24px, $black-two);

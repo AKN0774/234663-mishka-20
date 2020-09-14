@@ -17,10 +17,18 @@
   margin: 0;
   padding: 0;
   padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+  }
 }
 
 .copyright__link {
   display: block;
   text-decoration: none;
-  padding-top: 19px;
+  padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

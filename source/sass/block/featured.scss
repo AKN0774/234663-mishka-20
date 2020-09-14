@@ -1,4 +1,13 @@
 .featured {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat no-repeat;
+    background-position: center bottom;
+    background-size: 768px auto;
+  }
+}
+
+.featured__wrapper {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -11,8 +20,12 @@
     display: grid;
     grid-template-columns: 292px 258px 118px;
     grid-template-rows: auto auto auto auto auto;
-    margin-top: 21px;
+    padding-top: 40px;
     padding-bottom: 54px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat no-repeat;
+    background-position: center bottom;
+    background-size: 768px auto;
   }
 
   //Десктопная версия
@@ -74,6 +87,7 @@
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 0;
+    padding-bottom: 2px;
     margin: 0;
 
     @include font-parameter(normal, normal, 17px, 30px, $black-two);
@@ -90,7 +104,7 @@
     grid-column: 1/2;
     grid-row: 3/4;
     padding: 0;
-    padding-top: 27px;
+    padding-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,15 +141,10 @@
   }
 }
 
-.featured__img {
-  padding-top: 23px;
-
+.featured__picture {
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
     grid-row: 2/6;
-    width: 303px;
-    height: 404px;
-    margin-left: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,12 +153,29 @@
   }
 }
 
+.featured__img {
+  padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 42px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
+}
+
 .featured__price {
   @include font-parameter(normal, bold, 17px, 24px, $black-two);
 
   margin: 0;
   padding: 0;
-  padding-top: 27px;
+  padding-top: 21px;
   padding-right: 2px;
   padding-bottom: 23px;
   text-align: center;
@@ -157,9 +183,9 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 4/5;
-    padding-top: 39px;
+    padding-top: 37px;
     padding-right: 2px;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
 
     @include font-parameter(normal, bold, 20px, 24px, $black-two);
   }

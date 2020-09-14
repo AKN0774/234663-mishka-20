@@ -12,6 +12,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     padding-top: 68px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,6 +61,19 @@
 
   @media (min-width: $tablet-width) {
     @include font-parameter(normal, bold, 43px, 50px, $basic-black);
+    position: relative;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      background-image: url("../../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-size: 47px 82px;
+      width: 47px;
+      height: 82px;
+      top: -26px;
+      right: -331px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +93,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-top: 33px;
+    padding-top: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,7 +108,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-parameter(normal, normal, 17px, 30px, $black-two);
-    margin-right: 31px;
+    margin-right: 25px;
   }
 }
 
@@ -103,7 +117,6 @@
   text-decoration: none;
   border-bottom: 1px solid $green-two;
   padding: 0;
-  //padding-top: 15px;
   margin: 0;
 
   & p {
@@ -134,7 +147,7 @@
   display: flex;
   justify-content: flex-start;
   padding-top: 30px;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
@@ -178,9 +191,15 @@
   width: 260px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-top: 37px;
+  margin-top: 33px;
 
   @include font-parameter(normal, bold, 18px, 20px, $black-two);
+
+  @media (min-width: $tablet-width) {
+    @include font-parameter(normal, bold, 17px, 20px, $black-two);
+    width: 230px;
+    margin-top: 47px;
+  }
 
   @media (min-width: $desktop-width) {
     @include font-parameter(normal, bold, 17px, 20px, $black-two);
@@ -191,8 +210,42 @@
 }
 
 .contacts__map {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 17px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/3;
+  }
+
+  & img {
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      height: 457px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 527px;
+      height: 457px;
+    }
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 101px;
+    top: 145px;
+    left: 138px;
+
+    @media (min-width: $tablet-width) {
+      top: 138px;
+      left: 363px;
+    }
   }
 }

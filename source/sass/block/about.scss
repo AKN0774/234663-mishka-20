@@ -6,8 +6,8 @@
   justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
-    padding-bottom: 30px;
+    padding-top: 54px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,22 +29,113 @@
   justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
+    padding-top: 33px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding-top: 43px;
+  }
+}
+
+.about__list-item {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 45px;
+    margin-right: 34px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      order: 1;
+
+      @media (min-width: $tablet-width) {
+        order: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      order: 4;
+
+      @media (min-width: $tablet-width) {
+        order: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      order: 2;
+
+      @media (min-width: $tablet-width) {
+        order: 0;
+      }
+    }
+
+    &:nth-child(4) {
+      order: 5;
+
+      @media (min-width: $tablet-width) {
+        order: 0;
+      }
+    }
+
+    &:nth-child(5) {
+      order: 3;
+
+      @media (min-width: $tablet-width) {
+        order: 0;
+      }
+    }
+
+    &:nth-child(6) {
+      order: 6;
+
+      @media (min-width: $tablet-width) {
+        order: 0;
+      }
+    }
   }
 }
 
 .about__list-element {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
   @media (min-width: $tablet-width) {
-    width: 334px;
-    margin-bottom: 55px;
+    background-repeat: no-repeat;
+
+    &--flower {
+      background-image: url("../img/icon-feature-flower.svg");
+      background-size: 33px 38px;
+      background-position: 8px 5px;
+    }
+
+    &--threads {
+      background-image: url("../img/icon-feature-ball.svg");
+      background-size: 35px 35px;
+      background-position: 4px 10px;
+    }
+
+    &--money {
+      background-image: url("../img/icon-feature-money.svg");
+      background-size: 46px 27px;
+      background-position: 2px 10px;
+    }
+
+    &--rocket {
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-size: 54px 23px;
+      background-position: -5px 12px;
+    }
+
+    &--heart {
+      background-image: url("../img/icon-feature-heart.svg");
+      background-size: 33px 28px;
+      background-position: 7px 15px;
+    }
+
+    &--gift {
+      background-image: url("../img/icon-feature-gift.svg");
+      background-size: 32px 32px;
+      background-position: 4px 11px;
+    }
   }
 }
 
@@ -56,58 +147,8 @@
 
   @media (min-width: $tablet-width) {
     @include font-parameter(normal, bold, 20px, 22px, $basic-black);
-
-    padding-top: 56px;
-    padding-right: 40px;
-  }
-}
-
-.about__list-item {
-  &:nth-child(1) {
-    order: 1;
-
-    @media (min-width: $tablet-width) {
-      order: 0;
-    }
-  }
-
-  &:nth-child(2) {
-    order: 4;
-
-    @media (min-width: $tablet-width) {
-      order: 0;
-    }
-  }
-
-  &:nth-child(3) {
-    order: 2;
-
-    @media (min-width: $tablet-width) {
-      order: 0;
-    }
-  }
-
-  &:nth-child(4) {
-    order: 5;
-
-    @media (min-width: $tablet-width) {
-      order: 0;
-    }
-  }
-
-  &:nth-child(5) {
-    order: 3;
-
-    @media (min-width: $tablet-width) {
-      order: 0;
-    }
-  }
-
-  &:nth-child(6) {
-    order: 6;
-
-    @media (min-width: $tablet-width) {
-      order: 0;
-    }
+    text-align: left;
+    padding: 0;
+    padding-top: 65px;
   }
 }

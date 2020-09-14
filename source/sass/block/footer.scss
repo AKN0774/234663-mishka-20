@@ -4,8 +4,6 @@
 }
 
 .footer__wrapper {
-  box-sizing: border-box;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-start;
@@ -14,13 +12,31 @@
 
 .footer__social {
   border-bottom: 1px solid $grey-two;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 84px;
+    border: none;
+    width: auto;
+    margin-top: 59px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 274px;
+  }
+}
+
+.footer__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 182px;
+    margin-top: 51px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 51px;
+    margin-bottom: 58px;
   }
 }
 
@@ -29,14 +45,6 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-right: 159px;
-    margin-top: 51px;
-    margin-bottom: 58px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 350px;
-    margin-top: 51px;
-    margin-bottom: 58px;
+    width: 102px;
   }
 }
