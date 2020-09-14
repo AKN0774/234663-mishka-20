@@ -11,7 +11,13 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__logo-wrapper">
-          <a class="header__link-logo"><img src="img/logo-mobile.svg" alt="Лого магазина Мишка" width="86" height="35"></a>
+          <a class="header__link-logo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Лого магазина Мишка" width="86" height="35">
+            </picture>
+          </a>
           <button class="main-nav__toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -45,7 +51,7 @@
         </nav>
       </div>
       <div class="header__title-wrapper--index"><!--Добавлена обёртка с модификатором для разных стилей фона на разных страницах-->
-        <h1 class="header__title">Милые штуки<br>ручной<br>работы для дома</h1>
+        <h1 class="header__title">Милые штуки<br> ручной<br> работы для дома</h1>
       </div>
       <section class="pages">
         <h2 class="visually-hidden">Ссылки на разделы каталога</h2>
@@ -60,30 +66,37 @@
           </a>
         </div>
       </section>
+      <div class="header__bottom-background"></div>
     </header>
     <main class="main">
-      <section class="featured container">
-        <h2 class="visually-hidden">Товар недели</h2>
-        <p class="featured__title-item heading-secondary">Вязаные корзинки</p>
-        <p class="featured__title-promotion">Товар недели</p>
-        <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
-        <table class="featured__table">
-          <tr>
-            <td class="featured__table-parameter">Цвет:</td>
-            <td class="featured__table-value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="featured__table-parameter">Диаметр:</td>
-            <td class="featured__table-value">25 см</td>
-          </tr>
-          <tr>
-            <td class="featured__table-parameter">Высота:</td>
-            <td class="featured__table-value">15 см</td>
-          </tr>
-        </table>
-        <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" class="featured__img" width="260" height="315">
-        <p class="featured__price">Цена: 990 руб.</p>
-        <button class="button featured__button" type="button"><span>Заказать</span></button>
+      <section class="featured">
+          <div class="featured__wrapper container">
+            <h2 class="visually-hidden">Товар недели</h2>
+            <p class="featured__title-item heading-secondary">Вязаные корзинки</p>
+            <p class="featured__title-promotion">Товар недели</p>
+            <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+            <table class="featured__table">
+              <tr>
+                <td class="featured__table-parameter">Цвет:</td>
+                <td class="featured__table-value">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td class="featured__table-parameter">Диаметр:</td>
+                <td class="featured__table-value">25 см</td>
+              </tr>
+              <tr>
+                <td class="featured__table-parameter">Высота:</td>
+                <td class="featured__table-value">15 см</td>
+              </tr>
+            </table>
+            <picture class="featured__picture">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" class="featured__img" alt="Вязанные корзинки"  width="260" height="315" srcset="img/triple-set-mobile@2x.jpg 2x">
+            </picture>
+            <p class="featured__price">Цена: 990 руб.</p>
+            <button class="button featured__button" type="button"><span>Заказать</span></button>
+          </div>
       </section>
 
       <section class="about container"><!--Изменён порядок следования элементов-->
@@ -91,17 +104,17 @@
         <ul class="about__list">
           <li class="about__list-item">
             <div class="about__list-element about__list-element--flower">
-              <p class="about__list-element-title">Экологически чистые материалы</p>
+              <p class="about__list-element-title">Экологически<br> чистые материалы</p>
             </div>
           </li>
           <li class="about__list-item">
             <div class="about__list-element about__list-element--threads">
-              <p class="about__list-element-title">Связано вручную с любовью и умилением</p>
+              <p class="about__list-element-title">Связано вручную с<br> любовью и умилением</p>
             </div>
           </li>
           <li class="about__list-item">
             <div class="about__list-element about__list-element--money">
-              <p class="about__list-element-title">Скандинавский стиль по российской цене </p>
+              <p class="about__list-element-title">Скандинавский стиль<br> по российской цене </p>
             </div>
           </li>
           <li class="about__list-item">
@@ -111,12 +124,12 @@
           </li>
           <li class="about__list-item">
             <div class="about__list-element about__list-element--heart">
-              <p class="about__list-element-title">Увеличивает лайки на фотографиях</p>
+              <p class="about__list-element-title">Увеличивает лайки<br> на фотографиях</p>
             </div>
           </li>
           <li class="about__list-item">
             <div class="about__list-element about__list-element--gift">
-              <p class="about__list-element-title">Поставляется в подарочной упаковке</p>
+              <p class="about__list-element-title">Поставляется в<br> подарочной упаковке</p>
             </div>
           </li>
         </ul>
@@ -135,14 +148,14 @@
           <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"></button>
           <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
         </div>
-        <a href="reviews.html" class="reviews__write button">Написать</a>
+        <a href="reviews.html" class="reviews__write button"><span>Написать</span></a>
       </section>
 
       <section class="contacts">
         <div class="contacts__title-wrapper"><!--Добавлена обёртка для позиционирования элементов-->
           <h2 class="contacts__title">Контакты</h2>
           <div class="contact__email-wrapper">
-            <p class="contact__email-title">email:</p>
+            <p class="contact__email-title">e-mail:</p>
             <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
             <p>info@mimimishkashop.ru</p>
             </a>
@@ -152,16 +165,22 @@
             <p class="contacts__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br>  д. 19/8, офис 101</p>
           </div>
         </div>
-        <img src="https://via.placeholder.com/" alt="Карта с нашим адресом" class="contacts__map" width="320" height="457">
-        <a class="contacts__write button" href="feedback.html">Напишите нам</a>
+        <picture class="contacts__map">
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта с нашим адресом"  width="320" height="457">
+        </picture>
+        <a class="contacts__write button" href="feedback.html"><span>Напишите нам</span></a>
       </section>
 
     </main>
 
     <footer class="footer">
       <div class="footer__wrapper container">
-        <a class="footer__logo"><img src="img/logo-footer.svg" alt="Лого магазина Мишка" width="86" height="35">
-        </a>
+        <div class="footer__logo-wrapper">
+          <a class="footer__logo"><img src="img/logo-footer.svg" alt="Лого магазина Мишка" width="101" height="35">
+          </a>
+        </div>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -182,7 +201,7 @@
           </ul>
         </div>
         <div class="copyright">
-          <p class="copyright__text">Разработано:</p>
+          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__img" src="img/logo-htmlacademy.svg" alt="htmlacademy" width="27" height="35">
           </a>
@@ -203,7 +222,7 @@
             <input type="checkbox" name="size-L" id="size-L" class="visually-hidden">
             <label for="size-L" class="modal__form-label">L</label>
           </div>
-        <button class="modal__form-button button" type="submit">Добавить</button>
+        <button class="modal__form-button button" type="submit"><span>Добавить</span></button>
         </form>
       </div>
     </section>

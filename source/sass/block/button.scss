@@ -10,4 +10,8 @@
     background-color: $black-two;
     color: $basic-white;
   }
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
